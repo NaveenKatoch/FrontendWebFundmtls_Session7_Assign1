@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button - Like Unlike</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		#btnLikeUnlike{
+			width: 90px;
+			height: 35px;
+			background-color: #87CEEA;
+			border-style: solid;
+			border-width: 4px;
+			border-color: #FFB529;
+			margin-left: 40px;
+		}
+	</style>
+</head>
+<body>
+	<br>
+	<p id="para"><h3>Button - Like Unlike</h3></p>
+	<input type="button" id="btnLikeUnlike" value="Like" onclick="LikeUnlike()"><br><br>
+	<script type="text/javascript">
+		btn = document.getElementById('btnLikeUnlike');
+
+		function LikeUnlike(){
+			var btnVal = btn.value;	
+			if (btnVal == "Like") {
+				btn.value = "Unlike";
+				btn.style.backgroundColor = "#FF6245";
+			} else if (btnVal=="Unlike") {
+				btn.value = "Like";
+				btn.style.backgroundColor = "#87CEEA";
+			}
+		}
+	</script>
+</body>
+</html>
